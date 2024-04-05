@@ -1,0 +1,225 @@
+@import url("base.css");
+
+body{
+    background-color: var(--branco);
+}
+
+header{
+    width: 100%;
+    height: 420px;
+    background-image: url("/img/bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio img{
+    width: 128px;
+    border-radius: 9999px;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    transition-duration: 200ms;
+}
+
+.inicio img:hover{
+    transform: scale(1.1);
+}
+
+.inicio h1{
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--branco);
+}
+
+.inicio span{
+    color: var(--branco);
+    font-weight: 500;
+}
+
+.horarios{
+    background-color: var(--verde);
+    padding: 4px 16px 4px 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#inicio-menu{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 24px;
+}
+
+.title{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    padding: 0px 8px 0px 8px;
+    margin: 8px 0px 8px 0px;
+}
+
+.title h2{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(1);
+    gap: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding: 0px 8px 0px 8px;
+    margin-bottom: 20px;
+}
+
+.produto{
+    display: flex;
+    gap: 8px;
+    background: var(--gradiente);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.produto img{
+    width: 112px;
+    height: 112px;
+    border-radius: 6px;
+    transition-duration: 300ms;
+}
+
+.produto img:hover{
+    transform: scale(1.1) rotate(-2deg);
+}
+
+.produtos-desc{
+    width: 100%;
+}
+
+.produtos-desc h1{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.produtos-desc p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.produtos-vb{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.produtos-vb button{
+    background-color: var(--preto);
+    padding: 0px 20px 0px 20px;
+    border-radius: 5px;
+}
+
+
+.produtos-vb button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.produtos-vb i{
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--branco);
+}
+
+.produtos-vb p{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(1);
+    gap: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding: 0px 8px 0px 8px;
+    margin-bottom: 20px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    z-index: 40;
+    width: 100%;
+    background-color: var(--vermelho);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--branco);
+    font-weight: bold;
+    padding: 30px;
+    cursor: pointer;
+}
+
+footer span{
+    color: var(--branco);
+}
+
+footer i{
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--branco);
+}
+
+@media (min-width: 768px){
+    #inicio-menu{
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    main{
+        grid-template-columns: repeat(2, minmax(0, 2fr));
+    }
+
+    section{
+        grid-template-columns: repeat(2, minmax(0, 2fr));
+    }
+
+    .title{
+        padding: 0px 10% 0px 10%;
+    }
+
+    .title h2{
+        font-size: 30px;
+        line-height: 26px;
+    }
+
+    footer button{
+        padding: 20px;
+    }
+}
