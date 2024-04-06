@@ -3,12 +3,14 @@
 /* Variaveis */
 :root{
     --branco: #F6F7F8;
+    --cinza: #e5e5e5;
     --verde: #38b000;
     --preto: #212529;
     --amarelo: #fca311;
     --gradiente: linear-gradient(90deg, rgba(252,163,17,1) 0%, rgba(255,145,77,1) 100%);
-    --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --shadow: rgba(0, 0, 0, 0.468) 0px 5px 15px;
     --vermelho: #e63946;
+    --fundo: rgba(0, 0, 0, 0.7)
 }
 
 *{
@@ -18,5 +20,4 @@
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     background-color: transparent;
-    border: none;
 }
